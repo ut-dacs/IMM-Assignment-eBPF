@@ -88,7 +88,6 @@ int xdp_prog1(struct CTXTYPE *ctx) {
     void* data_end = (void*)(long)ctx->data_end;  //extract the pointer to the end  of the ethernet frame (used for safety check)
     void* data = (void*)(long)ctx->data; //extract the ethernet frame
     struct ethhdr *eth = data; //cast to ethernet header
-    // drop packets
     int rc = RETURNCODE;
     uint16_t h_proto; //h_proto is used for store the ethertype
     uint64_t nh_off = 0; //nh_off is used for store Ethernet Header lenght
