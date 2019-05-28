@@ -2,14 +2,14 @@
 #   Forked from xdp_drop_count.py
 #
 #   Exercise:   
-#   Count the number of packets for each outgoing flows with eBPF
-#   Develop a program that categorizes, counts and displays outgoing flows
+#   Count the number of packets for each ingoing flows with eBPF
+#   Develop a program that categorizes, counts and displays ingoing flows
 #   using BCC (BPF Compiler Collection) and Python 2.7
 #
 #   Current state of this code:
 #   The programs count the number of packetd for each pair srcip-dstip
 #   Exercise to complete:
-#   Extend the following code in order to count the packet for each outgoing flows   
+#   Extend the following code in order to count the packet for each ingoing flows   
 #
 #   First run:
 #   sudo python exercise.py docker0
